@@ -22,12 +22,17 @@ public class Lanceur {
 		FileReader fr = new FileReader("C:\\Users\\biasj\\eclipse-workspace\\TestPourProjet1\\STAGIAIRES.DON");
 		
 		try (Scanner saisi = new Scanner(System.in)) {
+			
 			System.out.println(" Vous recherchez les stagiaires de quel département ? \n");
+			dptStagiaire = saisi.next();
+			
+			
 			//System.out.println(" quelle année recherchez-vous? \n");
 			//anneePromo = saisi.next();
-			dptStagiaire = saisi.next();
+			
 		}
 		System.out.println("Liste des stagiaire originaire du département :"+ " "+dptStagiaire);
+		
 		//System.out.println(" liste des stagiaires de : "+anneePromo +" \n");
 		try (// BufferedReader objet plus simple pour lire
 				BufferedReader br = new BufferedReader(fr)) {
@@ -61,11 +66,6 @@ public class Lanceur {
 				
 				//rechercher avec année et departement
 //				if(stagiaire.getAnnee().equals("2011")&& (stagiaire.getDpt().equals("91"))) {
-//					System.out.println(" liste des élèves de 2011 du departement 91 \n");
-//					System.out.println(stagiaire.getNom()+ " " + stagiaire.getPrenom());
-//				}
-//				
-//				if(stagiaire.getAnnee().equals("2011")||stagiaire.getAnnee().equals("2005")||stagiaire.getAnnee().equals("2006")||stagiaire.getAnnee().equals("2007")||stagiaire.getAnnee().equals("2008")||stagiaire.getAnnee().equals("2009")||stagiaire.getAnnee().equals("2010")||stagiaire.getAnnee().equals("2011")||stagiaire.getAnnee().equals("2012")) {
 //					System.out.println(" liste des élèves de 2011 du departement 91 \n");
 //					System.out.println(stagiaire.getNom()+ " " + stagiaire.getPrenom());
 //				}
